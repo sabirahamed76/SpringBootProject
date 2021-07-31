@@ -2,12 +2,13 @@
 <!DOCTYPE configuration>
 
 <configuration scan="true">
+  
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
 <!-- The FILE and ASYNC appenders are here as examples for a production configuration -->
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${logging.file}.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>logs/SpringBatchProject.%d{yyyy-MM-dd}.log</fileNamePattern>
             <maxHistory>90</maxHistory>
         </rollingPolicy>
         <encoder>
@@ -21,7 +22,7 @@
         <appender-ref ref="FILE"/>
     </appender>
 
-    <root level="${logging.level.root}">
+    <root level="DEBUG">
         <appender-ref ref="ASYNC"/>
     </root>
 

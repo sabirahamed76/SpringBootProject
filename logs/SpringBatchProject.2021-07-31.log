@@ -1,0 +1,824 @@
+2021-07-31 12:54:16,290 INFO  [main] SpringBootApp: Starting SpringBootApp on shabir-pc with PID 16196 (D:\workstation\workspace-java\SpringBootProject\target\classes started by admin in D:\workstation\workspace-java\SpringBootProject)
+2021-07-31 12:54:16,294 DEBUG [main] SpringBootApp: Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2021-07-31 12:54:16,354 INFO  [main] SpringBootApp: No active profile set, falling back to default profiles: default
+2021-07-31 12:54:17,627 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-31 12:54:17,776 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 114ms. Found 2 repository interfaces.
+2021-07-31 12:54:18,341 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-31 12:54:18,405 WARN  [main] AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.java.spring [Xlint:invalidAbsoluteTypeName]
+2021-07-31 12:54:18,416 INFO  [main] ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-31 12:54:18,441 ERROR [main] SpringApplication: Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.java.spring [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:240)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:722)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:535)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.java.spring.app.SpringBootApp.main(SpringBootApp.java:33)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.java.spring [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1141)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:506)
+	... 14 common frames omitted
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.java.spring [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:126)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:95)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1807)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 36 common frames omitted
+2021-07-31 12:56:28,955 INFO  [main] SpringBootApp: Starting SpringBootApp on shabir-pc with PID 19296 (D:\workstation\workspace-java\SpringBootProject\target\classes started by admin in D:\workstation\workspace-java\SpringBootProject)
+2021-07-31 12:56:28,958 DEBUG [main] SpringBootApp: Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2021-07-31 12:56:28,959 INFO  [main] SpringBootApp: No active profile set, falling back to default profiles: default
+2021-07-31 12:56:29,508 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-31 12:56:29,576 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 58ms. Found 2 repository interfaces.
+2021-07-31 12:56:30,044 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-31 12:56:30,119 WARN  [main] AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.java.spring.controller [Xlint:invalidAbsoluteTypeName]
+2021-07-31 12:56:30,142 INFO  [main] ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-31 12:56:30,152 ERROR [main] SpringApplication: Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.java.spring.controller [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:240)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:722)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:535)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.java.spring.app.SpringBootApp.main(SpringBootApp.java:33)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.java.spring.controller [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1141)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:506)
+	... 14 common frames omitted
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.java.spring.controller [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:126)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:95)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1807)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 36 common frames omitted
+2021-07-31 12:58:40,672 INFO  [main] SpringBootApp: Starting SpringBootApp on shabir-pc with PID 24676 (D:\workstation\workspace-java\SpringBootProject\target\classes started by admin in D:\workstation\workspace-java\SpringBootProject)
+2021-07-31 12:58:40,675 DEBUG [main] SpringBootApp: Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2021-07-31 12:58:40,676 INFO  [main] SpringBootApp: No active profile set, falling back to default profiles: default
+2021-07-31 12:58:41,259 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-31 12:58:41,330 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 61ms. Found 2 repository interfaces.
+2021-07-31 12:58:41,808 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-31 12:58:42,225 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2021-07-31 12:58:42,451 DEBUG [main] debug: log4jdbc-logj2 properties initialization...
+2021-07-31 12:58:42,452 DEBUG [main] debug: Using logger: null
+2021-07-31 12:58:42,452 DEBUG [main] debug: x log4jdbc.debug.stack.prefix is not defined
+2021-07-31 12:58:42,452 DEBUG [main] debug: x log4jdbc.sqltiming.warn.threshold is not defined
+2021-07-31 12:58:42,452 DEBUG [main] debug: x log4jdbc.sqltiming.error.threshold is not defined
+2021-07-31 12:58:42,453 DEBUG [main] debug: x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+2021-07-31 12:58:42,453 DEBUG [main] debug: x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+2021-07-31 12:58:42,454 DEBUG [main] debug: x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+2021-07-31 12:58:42,454 DEBUG [main] debug: x log4jdbc.statement.warn is not defined (using default value false)
+2021-07-31 12:58:42,454 DEBUG [main] debug: x log4jdbc.dump.sql.select is not defined (using default value true)
+2021-07-31 12:58:42,454 DEBUG [main] debug: x log4jdbc.dump.sql.insert is not defined (using default value true)
+2021-07-31 12:58:42,454 DEBUG [main] debug: x log4jdbc.dump.sql.update is not defined (using default value true)
+2021-07-31 12:58:42,454 DEBUG [main] debug: x log4jdbc.dump.sql.delete is not defined (using default value true)
+2021-07-31 12:58:42,455 DEBUG [main] debug: x log4jdbc.dump.sql.create is not defined (using default value true)
+2021-07-31 12:58:42,455 DEBUG [main] debug: x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+2021-07-31 12:58:42,455 DEBUG [main] debug: x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+2021-07-31 12:58:42,455 DEBUG [main] debug: x log4jdbc.drivers is not defined
+2021-07-31 12:58:42,455 DEBUG [main] debug: x log4jdbc.trim.sql is not defined (using default value true)
+2021-07-31 12:58:42,455 DEBUG [main] debug: x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+2021-07-31 12:58:42,455 DEBUG [main] debug: x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+2021-07-31 12:58:42,456 DEBUG [main] debug: log4jdbc-logj2 properties initialization done.
+2021-07-31 12:58:42,456 DEBUG [main] debug: DriverSpy intialization...
+2021-07-31 12:58:42,457 DEBUG [main] debug:   FOUND DRIVER com.mysql.jdbc.Driver
+2021-07-31 12:58:42,460 DEBUG [main] debug: DriverSpy intialization done.
+2021-07-31 12:58:42,964 WARN  [main] DriverDataSource: Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-07-31 12:58:44,375 INFO  [main] LocalContainerEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-31 12:58:44,862 WARN  [main] JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-31 12:58:45,044 INFO  [main] ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-31 12:58:45,311 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-31 12:58:45,313 INFO  [main] SpringBootApp: Started SpringBootApp in 5.301 seconds (JVM running for 6.199)
+2021-07-31 12:58:49,462 DEBUG [http-nio-8080-exec-2] SpringJdbcController: viewCompany started
+2021-07-31 12:58:49,483 INFO  [http-nio-8080-exec-2] PerformanceAspect: Execution of findById took 17 ms
+2021-07-31 12:58:49,521 INFO  [http-nio-8080-exec-2] PerformanceAspect: 1Execution of viewCompany took 67 ms
+2021-07-31 13:11:24,739 INFO  [RMI TCP Connection(21)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin: Application shutdown requested.
+2021-07-31 13:11:24,742 INFO  [RMI TCP Connection(21)-127.0.0.1] ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-31 13:11:24,744 INFO  [RMI TCP Connection(21)-127.0.0.1] LocalContainerEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-31 13:11:45,268 INFO  [main] SpringBootApp: Starting SpringBootApp on shabir-pc with PID 22900 (D:\workstation\workspace-java\SpringBootProject\target\classes started by admin in D:\workstation\workspace-java\SpringBootProject)
+2021-07-31 13:11:45,273 DEBUG [main] SpringBootApp: Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2021-07-31 13:11:45,273 INFO  [main] SpringBootApp: No active profile set, falling back to default profiles: default
+2021-07-31 13:11:45,815 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-31 13:11:45,887 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 53ms. Found 2 repository interfaces.
+2021-07-31 13:11:46,342 WARN  [main] AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+2021-07-31 13:11:46,351 INFO  [main] ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-31 13:11:46,361 ERROR [main] SpringApplication: Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:240)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:722)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:535)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.java.spring.app.SpringBootApp.main(SpringBootApp.java:33)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1141)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:506)
+	... 14 common frames omitted
+Caused by: java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.maybeBindProceedingJoinPoint(AbstractAspectJAdvice.java:414)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.calculateArgumentBindings(AbstractAspectJAdvice.java:388)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvice(ReflectiveAspectJAdvisorFactory.java:294)
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.instantiateAdvice(InstantiationModelAwarePointcutAdvisorImpl.java:149)
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.<init>(InstantiationModelAwarePointcutAdvisorImpl.java:113)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisor(ReflectiveAspectJAdvisorFactory.java:198)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisors(ReflectiveAspectJAdvisorFactory.java:126)
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:110)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:95)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1141)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:506)
+	... 35 common frames omitted
+2021-07-31 13:13:13,213 INFO  [main] SpringBootApp: Starting SpringBootApp on shabir-pc with PID 21508 (D:\workstation\workspace-java\SpringBootProject\target\classes started by admin in D:\workstation\workspace-java\SpringBootProject)
+2021-07-31 13:13:13,219 DEBUG [main] SpringBootApp: Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2021-07-31 13:13:13,220 INFO  [main] SpringBootApp: No active profile set, falling back to default profiles: default
+2021-07-31 13:13:13,762 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-31 13:13:13,829 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 56ms. Found 2 repository interfaces.
+2021-07-31 13:13:14,323 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-31 13:13:14,657 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2021-07-31 13:13:14,890 DEBUG [main] debug: log4jdbc-logj2 properties initialization...
+2021-07-31 13:13:14,892 DEBUG [main] debug: Using logger: null
+2021-07-31 13:13:14,892 DEBUG [main] debug: x log4jdbc.debug.stack.prefix is not defined
+2021-07-31 13:13:14,892 DEBUG [main] debug: x log4jdbc.sqltiming.warn.threshold is not defined
+2021-07-31 13:13:14,892 DEBUG [main] debug: x log4jdbc.sqltiming.error.threshold is not defined
+2021-07-31 13:13:14,893 DEBUG [main] debug: x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+2021-07-31 13:13:14,893 DEBUG [main] debug: x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+2021-07-31 13:13:14,893 DEBUG [main] debug: x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+2021-07-31 13:13:14,893 DEBUG [main] debug: x log4jdbc.statement.warn is not defined (using default value false)
+2021-07-31 13:13:14,894 DEBUG [main] debug: x log4jdbc.dump.sql.select is not defined (using default value true)
+2021-07-31 13:13:14,894 DEBUG [main] debug: x log4jdbc.dump.sql.insert is not defined (using default value true)
+2021-07-31 13:13:14,894 DEBUG [main] debug: x log4jdbc.dump.sql.update is not defined (using default value true)
+2021-07-31 13:13:14,894 DEBUG [main] debug: x log4jdbc.dump.sql.delete is not defined (using default value true)
+2021-07-31 13:13:14,894 DEBUG [main] debug: x log4jdbc.dump.sql.create is not defined (using default value true)
+2021-07-31 13:13:14,894 DEBUG [main] debug: x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+2021-07-31 13:13:14,895 DEBUG [main] debug: x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+2021-07-31 13:13:14,895 DEBUG [main] debug: x log4jdbc.drivers is not defined
+2021-07-31 13:13:14,895 DEBUG [main] debug: x log4jdbc.trim.sql is not defined (using default value true)
+2021-07-31 13:13:14,895 DEBUG [main] debug: x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+2021-07-31 13:13:14,895 DEBUG [main] debug: x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+2021-07-31 13:13:14,896 DEBUG [main] debug: log4jdbc-logj2 properties initialization done.
+2021-07-31 13:13:14,896 DEBUG [main] debug: DriverSpy intialization...
+2021-07-31 13:13:14,898 DEBUG [main] debug:   FOUND DRIVER com.mysql.jdbc.Driver
+2021-07-31 13:13:14,902 DEBUG [main] debug: DriverSpy intialization done.
+2021-07-31 13:13:15,504 WARN  [main] DriverDataSource: Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-07-31 13:13:17,086 INFO  [main] LocalContainerEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-31 13:13:17,528 WARN  [main] JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-31 13:13:17,681 INFO  [main] ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-31 13:13:17,949 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-31 13:13:17,951 INFO  [main] SpringBootApp: Started SpringBootApp in 5.448 seconds (JVM running for 6.33)
+2021-07-31 13:13:28,916 DEBUG [http-nio-8080-exec-2] SpringJdbcController: viewCompany started
+2021-07-31 13:13:29,004 INFO  [http-nio-8080-exec-2] PerformanceAspect: org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint$MethodSignatureImpl : viewCompany took 96 ms and ended at 1428698906303300
+2021-07-31 13:15:36,464 INFO  [RMI TCP Connection(12)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin: Application shutdown requested.
+2021-07-31 13:15:36,467 INFO  [RMI TCP Connection(12)-127.0.0.1] ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-31 13:15:36,468 INFO  [RMI TCP Connection(12)-127.0.0.1] LocalContainerEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-31 13:16:59,074 INFO  [main] SpringBootApp: Starting SpringBootApp on shabir-pc with PID 19192 (D:\workstation\workspace-java\SpringBootProject\target\classes started by admin in D:\workstation\workspace-java\SpringBootProject)
+2021-07-31 13:16:59,077 DEBUG [main] SpringBootApp: Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2021-07-31 13:16:59,078 INFO  [main] SpringBootApp: No active profile set, falling back to default profiles: default
+2021-07-31 13:16:59,620 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-31 13:16:59,680 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 52ms. Found 2 repository interfaces.
+2021-07-31 13:17:00,158 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-31 13:17:00,483 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2021-07-31 13:17:00,672 DEBUG [main] debug: log4jdbc-logj2 properties initialization...
+2021-07-31 13:17:00,673 DEBUG [main] debug: Using logger: null
+2021-07-31 13:17:00,673 DEBUG [main] debug: x log4jdbc.debug.stack.prefix is not defined
+2021-07-31 13:17:00,673 DEBUG [main] debug: x log4jdbc.sqltiming.warn.threshold is not defined
+2021-07-31 13:17:00,673 DEBUG [main] debug: x log4jdbc.sqltiming.error.threshold is not defined
+2021-07-31 13:17:00,673 DEBUG [main] debug: x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+2021-07-31 13:17:00,673 DEBUG [main] debug: x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+2021-07-31 13:17:00,674 DEBUG [main] debug: x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+2021-07-31 13:17:00,674 DEBUG [main] debug: x log4jdbc.statement.warn is not defined (using default value false)
+2021-07-31 13:17:00,674 DEBUG [main] debug: x log4jdbc.dump.sql.select is not defined (using default value true)
+2021-07-31 13:17:00,674 DEBUG [main] debug: x log4jdbc.dump.sql.insert is not defined (using default value true)
+2021-07-31 13:17:00,674 DEBUG [main] debug: x log4jdbc.dump.sql.update is not defined (using default value true)
+2021-07-31 13:17:00,675 DEBUG [main] debug: x log4jdbc.dump.sql.delete is not defined (using default value true)
+2021-07-31 13:17:00,675 DEBUG [main] debug: x log4jdbc.dump.sql.create is not defined (using default value true)
+2021-07-31 13:17:00,675 DEBUG [main] debug: x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+2021-07-31 13:17:00,675 DEBUG [main] debug: x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+2021-07-31 13:17:00,675 DEBUG [main] debug: x log4jdbc.drivers is not defined
+2021-07-31 13:17:00,675 DEBUG [main] debug: x log4jdbc.trim.sql is not defined (using default value true)
+2021-07-31 13:17:00,676 DEBUG [main] debug: x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+2021-07-31 13:17:00,676 DEBUG [main] debug: x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+2021-07-31 13:17:00,676 DEBUG [main] debug: log4jdbc-logj2 properties initialization done.
+2021-07-31 13:17:00,676 DEBUG [main] debug: DriverSpy intialization...
+2021-07-31 13:17:00,677 DEBUG [main] debug:   FOUND DRIVER com.mysql.jdbc.Driver
+2021-07-31 13:17:00,681 DEBUG [main] debug: DriverSpy intialization done.
+2021-07-31 13:17:01,187 WARN  [main] DriverDataSource: Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-07-31 13:17:02,689 INFO  [main] LocalContainerEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-31 13:17:03,105 WARN  [main] JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-31 13:17:03,256 INFO  [main] ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-31 13:17:03,480 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-31 13:17:03,482 INFO  [main] SpringBootApp: Started SpringBootApp in 5.045 seconds (JVM running for 5.975)
+2021-07-31 13:17:10,141 DEBUG [http-nio-8080-exec-1] SpringJdbcController: viewCompany started
+2021-07-31 13:17:10,232 INFO  [http-nio-8080-exec-1] PerformanceAspect: com.java.spring.controller.SpringJdbcController : viewCompany took 64 ms and ended at 1627708630230
+2021-07-31 13:18:15,511 INFO  [RMI TCP Connection(9)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin: Application shutdown requested.
+2021-07-31 13:18:15,519 INFO  [RMI TCP Connection(9)-127.0.0.1] ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-31 13:18:15,519 INFO  [RMI TCP Connection(9)-127.0.0.1] LocalContainerEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-31 13:41:41,311 INFO  [main] SpringBootApp: Starting SpringBootApp on shabir-pc with PID 22168 (D:\workstation\workspace-java\SpringBootProject\target\classes started by admin in D:\workstation\workspace-java\SpringBootProject)
+2021-07-31 13:41:41,317 DEBUG [main] SpringBootApp: Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2021-07-31 13:41:41,318 INFO  [main] SpringBootApp: No active profile set, falling back to default profiles: default
+2021-07-31 13:41:42,276 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-31 13:41:42,391 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 93ms. Found 2 repository interfaces.
+2021-07-31 13:41:43,195 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-31 13:41:43,298 WARN  [main] AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'name pattern' at character position 29
+execution( com.java.spring.*(..)) 
+                             ^
+
+2021-07-31 13:41:43,317 INFO  [main] ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-31 13:41:43,337 ERROR [main] SpringApplication: Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'name pattern' at character position 29
+execution( com.java.spring.*(..)) 
+                             ^
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:240)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:722)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:535)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.java.spring.app.SpringBootApp.main(SpringBootApp.java:33)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'name pattern' at character position 29
+execution( com.java.spring.*(..)) 
+                             ^
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1141)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:506)
+	... 14 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'name pattern' at character position 29
+execution( com.java.spring.*(..)) 
+                             ^
+
+	at org.aspectj.weaver.tools.PointcutParser.resolvePointcutExpression(PointcutParser.java:334)
+	at org.aspectj.weaver.reflect.InternalUseOnlyPointcutParser.resolvePointcutExpression(InternalUseOnlyPointcutParser.java:36)
+	at org.aspectj.weaver.reflect.Java15ReflectionBasedReferenceTypeDelegate.getDeclaredPointcuts(Java15ReflectionBasedReferenceTypeDelegate.java:309)
+	at org.aspectj.weaver.ReferenceType.getDeclaredPointcuts(ReferenceType.java:890)
+	at org.aspectj.weaver.ResolvedType$PointcutGetter.get(ResolvedType.java:263)
+	at org.aspectj.weaver.ResolvedType$PointcutGetter.get(ResolvedType.java:260)
+	at org.aspectj.weaver.Iterators$4$1.hasNext(Iterators.java:213)
+	at org.aspectj.weaver.Iterators$4.hasNext(Iterators.java:230)
+	at org.aspectj.weaver.ResolvedType.findPointcut(ResolvedType.java:767)
+	at org.aspectj.weaver.patterns.ReferencePointcut.resolveBindings(ReferencePointcut.java:148)
+	at org.aspectj.weaver.patterns.Pointcut.resolve(Pointcut.java:189)
+	at org.aspectj.weaver.tools.PointcutParser.resolvePointcutExpression(PointcutParser.java:331)
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:312)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:126)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:95)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1807)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 36 common frames omitted
+2021-07-31 13:46:06,082 INFO  [main] SpringBootApp: Starting SpringBootApp on shabir-pc with PID 5504 (D:\workstation\workspace-java\SpringBootProject\target\classes started by admin in D:\workstation\workspace-java\SpringBootProject)
+2021-07-31 13:46:06,085 DEBUG [main] SpringBootApp: Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2021-07-31 13:46:06,086 INFO  [main] SpringBootApp: No active profile set, falling back to default profiles: default
+2021-07-31 13:46:06,633 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-31 13:46:06,694 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 52ms. Found 2 repository interfaces.
+2021-07-31 13:46:07,172 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-31 13:46:07,596 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2021-07-31 13:46:07,811 DEBUG [main] debug: log4jdbc-logj2 properties initialization...
+2021-07-31 13:46:07,812 DEBUG [main] debug: Using logger: null
+2021-07-31 13:46:07,813 DEBUG [main] debug: x log4jdbc.debug.stack.prefix is not defined
+2021-07-31 13:46:07,813 DEBUG [main] debug: x log4jdbc.sqltiming.warn.threshold is not defined
+2021-07-31 13:46:07,813 DEBUG [main] debug: x log4jdbc.sqltiming.error.threshold is not defined
+2021-07-31 13:46:07,813 DEBUG [main] debug: x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+2021-07-31 13:46:07,814 DEBUG [main] debug: x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+2021-07-31 13:46:07,814 DEBUG [main] debug: x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+2021-07-31 13:46:07,814 DEBUG [main] debug: x log4jdbc.statement.warn is not defined (using default value false)
+2021-07-31 13:46:07,815 DEBUG [main] debug: x log4jdbc.dump.sql.select is not defined (using default value true)
+2021-07-31 13:46:07,815 DEBUG [main] debug: x log4jdbc.dump.sql.insert is not defined (using default value true)
+2021-07-31 13:46:07,815 DEBUG [main] debug: x log4jdbc.dump.sql.update is not defined (using default value true)
+2021-07-31 13:46:07,815 DEBUG [main] debug: x log4jdbc.dump.sql.delete is not defined (using default value true)
+2021-07-31 13:46:07,815 DEBUG [main] debug: x log4jdbc.dump.sql.create is not defined (using default value true)
+2021-07-31 13:46:07,816 DEBUG [main] debug: x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+2021-07-31 13:46:07,816 DEBUG [main] debug: x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+2021-07-31 13:46:07,816 DEBUG [main] debug: x log4jdbc.drivers is not defined
+2021-07-31 13:46:07,816 DEBUG [main] debug: x log4jdbc.trim.sql is not defined (using default value true)
+2021-07-31 13:46:07,816 DEBUG [main] debug: x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+2021-07-31 13:46:07,817 DEBUG [main] debug: x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+2021-07-31 13:46:07,817 DEBUG [main] debug: log4jdbc-logj2 properties initialization done.
+2021-07-31 13:46:07,817 DEBUG [main] debug: DriverSpy intialization...
+2021-07-31 13:46:07,818 DEBUG [main] debug:   FOUND DRIVER com.mysql.jdbc.Driver
+2021-07-31 13:46:07,821 DEBUG [main] debug: DriverSpy intialization done.
+2021-07-31 13:46:08,538 WARN  [main] DriverDataSource: Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-07-31 13:46:10,406 INFO  [main] LocalContainerEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-31 13:46:11,456 WARN  [main] JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-31 13:46:11,708 INFO  [main] ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-31 13:46:12,026 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-31 13:46:12,029 INFO  [main] SpringBootApp: Started SpringBootApp in 6.587 seconds (JVM running for 7.614)
+2021-07-31 13:46:16,422 DEBUG [http-nio-8080-exec-1] SpringJdbcController: viewCompany started
+2021-07-31 13:47:50,238 INFO  [RMI TCP Connection(10)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin: Application shutdown requested.
+2021-07-31 13:47:50,240 INFO  [RMI TCP Connection(10)-127.0.0.1] ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-31 13:47:50,242 INFO  [RMI TCP Connection(10)-127.0.0.1] LocalContainerEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-31 13:49:26,991 INFO  [main] SpringBootApp: Starting SpringBootApp on shabir-pc with PID 11712 (D:\workstation\workspace-java\SpringBootProject\target\classes started by admin in D:\workstation\workspace-java\SpringBootProject)
+2021-07-31 13:49:26,995 DEBUG [main] SpringBootApp: Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2021-07-31 13:49:26,995 INFO  [main] SpringBootApp: No active profile set, falling back to default profiles: default
+2021-07-31 13:49:27,609 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-31 13:49:27,688 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 68ms. Found 2 repository interfaces.
+2021-07-31 13:49:28,198 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-31 13:49:28,263 WARN  [main] AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.java.spring.controller [Xlint:invalidAbsoluteTypeName]
+2021-07-31 13:49:28,286 INFO  [main] ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-31 13:49:28,297 ERROR [main] SpringApplication: Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.java.spring.controller [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:240)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:722)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:535)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.java.spring.app.SpringBootApp.main(SpringBootApp.java:33)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.java.spring.controller [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1141)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:506)
+	... 14 common frames omitted
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.java.spring.controller [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:126)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:95)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1807)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 36 common frames omitted
+2021-07-31 13:50:28,435 INFO  [main] SpringBootApp: Starting SpringBootApp on shabir-pc with PID 21588 (D:\workstation\workspace-java\SpringBootProject\target\classes started by admin in D:\workstation\workspace-java\SpringBootProject)
+2021-07-31 13:50:28,435 DEBUG [main] SpringBootApp: Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2021-07-31 13:50:28,435 INFO  [main] SpringBootApp: No active profile set, falling back to default profiles: default
+2021-07-31 13:50:28,991 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-31 13:50:29,054 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 54ms. Found 2 repository interfaces.
+2021-07-31 13:50:29,529 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-31 13:50:29,919 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2021-07-31 13:50:30,134 DEBUG [main] debug: log4jdbc-logj2 properties initialization...
+2021-07-31 13:50:30,135 DEBUG [main] debug: Using logger: null
+2021-07-31 13:50:30,135 DEBUG [main] debug: x log4jdbc.debug.stack.prefix is not defined
+2021-07-31 13:50:30,136 DEBUG [main] debug: x log4jdbc.sqltiming.warn.threshold is not defined
+2021-07-31 13:50:30,136 DEBUG [main] debug: x log4jdbc.sqltiming.error.threshold is not defined
+2021-07-31 13:50:30,136 DEBUG [main] debug: x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+2021-07-31 13:50:30,136 DEBUG [main] debug: x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+2021-07-31 13:50:30,137 DEBUG [main] debug: x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+2021-07-31 13:50:30,137 DEBUG [main] debug: x log4jdbc.statement.warn is not defined (using default value false)
+2021-07-31 13:50:30,137 DEBUG [main] debug: x log4jdbc.dump.sql.select is not defined (using default value true)
+2021-07-31 13:50:30,137 DEBUG [main] debug: x log4jdbc.dump.sql.insert is not defined (using default value true)
+2021-07-31 13:50:30,138 DEBUG [main] debug: x log4jdbc.dump.sql.update is not defined (using default value true)
+2021-07-31 13:50:30,138 DEBUG [main] debug: x log4jdbc.dump.sql.delete is not defined (using default value true)
+2021-07-31 13:50:30,138 DEBUG [main] debug: x log4jdbc.dump.sql.create is not defined (using default value true)
+2021-07-31 13:50:30,138 DEBUG [main] debug: x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+2021-07-31 13:50:30,138 DEBUG [main] debug: x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+2021-07-31 13:50:30,139 DEBUG [main] debug: x log4jdbc.drivers is not defined
+2021-07-31 13:50:30,139 DEBUG [main] debug: x log4jdbc.trim.sql is not defined (using default value true)
+2021-07-31 13:50:30,139 DEBUG [main] debug: x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+2021-07-31 13:50:30,139 DEBUG [main] debug: x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+2021-07-31 13:50:30,139 DEBUG [main] debug: log4jdbc-logj2 properties initialization done.
+2021-07-31 13:50:30,140 DEBUG [main] debug: DriverSpy intialization...
+2021-07-31 13:50:30,141 DEBUG [main] debug:   FOUND DRIVER com.mysql.jdbc.Driver
+2021-07-31 13:50:30,145 DEBUG [main] debug: DriverSpy intialization done.
+2021-07-31 13:50:30,657 WARN  [main] DriverDataSource: Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-07-31 13:50:32,104 INFO  [main] LocalContainerEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-31 13:50:32,645 WARN  [main] JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-31 13:50:32,848 INFO  [main] ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-31 13:50:33,120 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-31 13:50:33,122 INFO  [main] SpringBootApp: Started SpringBootApp in 5.308 seconds (JVM running for 6.218)
+2021-07-31 13:50:37,442 DEBUG [http-nio-8080-exec-2] SpringJdbcController: viewCompany started
+2021-07-31 13:50:37,492 INFO  [http-nio-8080-exec-2] PerformanceAspect: com.java.spring.controller.SpringJdbcController : viewCompany took 54 ms and ended at 20210731_135037
+2021-07-31 13:51:08,502 INFO  [http-nio-8080-exec-3] PerformanceAspect: com.java.spring.controller.SpringJdbcController : getAllCompanies took 4 ms and ended at 20210731_135108
+2021-07-31 13:55:30,795 INFO  [RMI TCP Connection(13)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin: Application shutdown requested.
+2021-07-31 13:55:30,796 INFO  [RMI TCP Connection(13)-127.0.0.1] ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-31 13:55:30,796 INFO  [RMI TCP Connection(13)-127.0.0.1] LocalContainerEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-31 13:56:17,317 INFO  [main] SpringBootApp: Starting SpringBootApp on shabir-pc with PID 20848 (D:\workstation\workspace-java\SpringBootProject\target\classes started by admin in D:\workstation\workspace-java\SpringBootProject)
+2021-07-31 13:56:17,320 DEBUG [main] SpringBootApp: Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2021-07-31 13:56:17,321 INFO  [main] SpringBootApp: No active profile set, falling back to default profiles: default
+2021-07-31 13:56:17,858 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-31 13:56:17,920 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 53ms. Found 2 repository interfaces.
+2021-07-31 13:56:18,408 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-31 13:56:18,843 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2021-07-31 13:56:19,078 DEBUG [main] debug: log4jdbc-logj2 properties initialization...
+2021-07-31 13:56:19,079 DEBUG [main] debug: Using logger: null
+2021-07-31 13:56:19,079 DEBUG [main] debug: x log4jdbc.debug.stack.prefix is not defined
+2021-07-31 13:56:19,080 DEBUG [main] debug: x log4jdbc.sqltiming.warn.threshold is not defined
+2021-07-31 13:56:19,080 DEBUG [main] debug: x log4jdbc.sqltiming.error.threshold is not defined
+2021-07-31 13:56:19,080 DEBUG [main] debug: x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+2021-07-31 13:56:19,080 DEBUG [main] debug: x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+2021-07-31 13:56:19,081 DEBUG [main] debug: x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+2021-07-31 13:56:19,081 DEBUG [main] debug: x log4jdbc.statement.warn is not defined (using default value false)
+2021-07-31 13:56:19,081 DEBUG [main] debug: x log4jdbc.dump.sql.select is not defined (using default value true)
+2021-07-31 13:56:19,081 DEBUG [main] debug: x log4jdbc.dump.sql.insert is not defined (using default value true)
+2021-07-31 13:56:19,082 DEBUG [main] debug: x log4jdbc.dump.sql.update is not defined (using default value true)
+2021-07-31 13:56:19,082 DEBUG [main] debug: x log4jdbc.dump.sql.delete is not defined (using default value true)
+2021-07-31 13:56:19,082 DEBUG [main] debug: x log4jdbc.dump.sql.create is not defined (using default value true)
+2021-07-31 13:56:19,082 DEBUG [main] debug: x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+2021-07-31 13:56:19,082 DEBUG [main] debug: x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+2021-07-31 13:56:19,082 DEBUG [main] debug: x log4jdbc.drivers is not defined
+2021-07-31 13:56:19,083 DEBUG [main] debug: x log4jdbc.trim.sql is not defined (using default value true)
+2021-07-31 13:56:19,083 DEBUG [main] debug: x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+2021-07-31 13:56:19,083 DEBUG [main] debug: x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+2021-07-31 13:56:19,083 DEBUG [main] debug: log4jdbc-logj2 properties initialization done.
+2021-07-31 13:56:19,083 DEBUG [main] debug: DriverSpy intialization...
+2021-07-31 13:56:19,085 DEBUG [main] debug:   FOUND DRIVER com.mysql.jdbc.Driver
+2021-07-31 13:56:19,087 DEBUG [main] debug: DriverSpy intialization done.
+2021-07-31 13:56:19,093 INFO  [main] PerformanceAspect: com.java.spring.config.AppConfig : getDataSource   started at 20210731_135619
+2021-07-31 13:56:19,093 INFO  [main] PerformanceAspect: com.java.spring.config.AppConfig : getDataSource took 51 ms and ended at 20210731_135619
+2021-07-31 13:56:19,622 WARN  [main] DriverDataSource: Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-07-31 13:56:21,241 INFO  [main] LocalContainerEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-31 13:56:21,683 INFO  [main] PerformanceAspect: com.java.spring.app.SpringBootApp : getNamedParameterJdbcTemplate   started at 20210731_135621
+2021-07-31 13:56:21,683 INFO  [main] PerformanceAspect: com.java.spring.app.SpringBootApp : getNamedParameterJdbcTemplate took 6 ms and ended at 20210731_135621
+2021-07-31 13:56:21,725 INFO  [main] PerformanceAspect: com.java.spring.config.AppConfig : modelMapper   started at 20210731_135621
+2021-07-31 13:56:21,725 INFO  [main] PerformanceAspect: com.java.spring.config.AppConfig : modelMapper took 17 ms and ended at 20210731_135621
+2021-07-31 13:56:21,862 WARN  [main] JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-31 13:56:22,106 INFO  [main] ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-31 13:56:22,390 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-31 13:56:22,393 INFO  [main] SpringBootApp: Started SpringBootApp in 5.696 seconds (JVM running for 6.575)
+2021-07-31 13:56:22,554 INFO  [main] PerformanceAspect: org.springframework.data.repository.CrudRepository : findAll   started at 20210731_135622
+2021-07-31 13:56:22,554 INFO  [main] PerformanceAspect: org.springframework.data.repository.CrudRepository : findAll took 157 ms and ended at 20210731_135622
+2021-07-31 13:56:22,555 INFO  [main] PerformanceAspect: com.java.spring.app.SpringBootApp : run   started at 20210731_135622
+2021-07-31 13:56:22,555 INFO  [main] PerformanceAspect: com.java.spring.app.SpringBootApp : run took 160 ms and ended at 20210731_135622
+2021-07-31 13:56:54,920 INFO  [http-nio-8080-exec-1] PerformanceAspect: com.java.spring.controller.SpringJdbcController : getAllCompanies   started at 20210731_135654
+2021-07-31 13:56:54,921 INFO  [http-nio-8080-exec-1] PerformanceAspect: com.java.spring.controller.SpringJdbcController : getAllCompanies took 22 ms and ended at 20210731_135654
+2021-07-31 13:59:19,045 INFO  [RMI TCP Connection(11)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin: Application shutdown requested.
+2021-07-31 13:59:19,047 INFO  [RMI TCP Connection(11)-127.0.0.1] ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-31 13:59:19,049 INFO  [RMI TCP Connection(11)-127.0.0.1] LocalContainerEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-31 14:00:23,872 INFO  [main] SpringBootApp: Starting SpringBootApp on shabir-pc with PID 14844 (D:\workstation\workspace-java\SpringBootProject\target\classes started by admin in D:\workstation\workspace-java\SpringBootProject)
+2021-07-31 14:00:23,875 DEBUG [main] SpringBootApp: Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2021-07-31 14:00:23,876 INFO  [main] SpringBootApp: No active profile set, falling back to default profiles: default
+2021-07-31 14:00:24,427 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-31 14:00:24,492 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 55ms. Found 2 repository interfaces.
+2021-07-31 14:00:24,998 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-31 14:00:25,445 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2021-07-31 14:00:25,653 DEBUG [main] debug: log4jdbc-logj2 properties initialization...
+2021-07-31 14:00:25,654 DEBUG [main] debug: Using logger: null
+2021-07-31 14:00:25,654 DEBUG [main] debug: x log4jdbc.debug.stack.prefix is not defined
+2021-07-31 14:00:25,654 DEBUG [main] debug: x log4jdbc.sqltiming.warn.threshold is not defined
+2021-07-31 14:00:25,654 DEBUG [main] debug: x log4jdbc.sqltiming.error.threshold is not defined
+2021-07-31 14:00:25,655 DEBUG [main] debug: x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+2021-07-31 14:00:25,655 DEBUG [main] debug: x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+2021-07-31 14:00:25,655 DEBUG [main] debug: x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+2021-07-31 14:00:25,655 DEBUG [main] debug: x log4jdbc.statement.warn is not defined (using default value false)
+2021-07-31 14:00:25,655 DEBUG [main] debug: x log4jdbc.dump.sql.select is not defined (using default value true)
+2021-07-31 14:00:25,656 DEBUG [main] debug: x log4jdbc.dump.sql.insert is not defined (using default value true)
+2021-07-31 14:00:25,656 DEBUG [main] debug: x log4jdbc.dump.sql.update is not defined (using default value true)
+2021-07-31 14:00:25,656 DEBUG [main] debug: x log4jdbc.dump.sql.delete is not defined (using default value true)
+2021-07-31 14:00:25,656 DEBUG [main] debug: x log4jdbc.dump.sql.create is not defined (using default value true)
+2021-07-31 14:00:25,656 DEBUG [main] debug: x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+2021-07-31 14:00:25,656 DEBUG [main] debug: x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+2021-07-31 14:00:25,657 DEBUG [main] debug: x log4jdbc.drivers is not defined
+2021-07-31 14:00:25,657 DEBUG [main] debug: x log4jdbc.trim.sql is not defined (using default value true)
+2021-07-31 14:00:25,657 DEBUG [main] debug: x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+2021-07-31 14:00:25,657 DEBUG [main] debug: x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+2021-07-31 14:00:25,657 DEBUG [main] debug: log4jdbc-logj2 properties initialization done.
+2021-07-31 14:00:25,657 DEBUG [main] debug: DriverSpy intialization...
+2021-07-31 14:00:25,659 DEBUG [main] debug:   FOUND DRIVER com.mysql.jdbc.Driver
+2021-07-31 14:00:25,662 DEBUG [main] debug: DriverSpy intialization done.
+2021-07-31 14:00:26,200 WARN  [main] DriverDataSource: Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-07-31 14:00:27,636 INFO  [main] LocalContainerEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-31 14:00:28,310 WARN  [main] JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-31 14:00:28,547 INFO  [main] ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-31 14:00:28,842 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-31 14:00:28,845 INFO  [main] SpringBootApp: Started SpringBootApp in 5.672 seconds (JVM running for 6.575)
+2021-07-31 14:01:12,582 INFO  [http-nio-8080-exec-2] PerformanceAspect: com.java.spring.controller.SpringJdbcController : getAllCompanies   started at 20210731_140112
+2021-07-31 14:01:12,583 INFO  [http-nio-8080-exec-2] PerformanceAspect: com.java.spring.controller.SpringJdbcController : getAllCompanies took 18 ms and ended at 20210731_140112
+2021-07-31 14:02:07,208 INFO  [http-nio-8080-exec-3] PerformanceAspect: com.java.spring.service.impl.CompanyServiceImpl : convertToDto   started at 20210731_140207
+2021-07-31 14:02:07,209 INFO  [http-nio-8080-exec-3] PerformanceAspect: com.java.spring.service.impl.CompanyServiceImpl : convertToDto took 42 ms and ended at 20210731_140207
+2021-07-31 14:02:07,209 INFO  [http-nio-8080-exec-3] PerformanceAspect: com.java.spring.controller.SpringJdbcController : viewCompany   started at 20210731_140207
+2021-07-31 14:02:07,209 INFO  [http-nio-8080-exec-3] PerformanceAspect: com.java.spring.controller.SpringJdbcController : viewCompany took 60 ms and ended at 20210731_140207
+2021-07-31 14:17:57,610 INFO  [main] SpringBootApp: Starting SpringBootApp on shabir-pc with PID 18800 (D:\workstation\workspace-java\SpringBootProject\target\classes started by admin in D:\workstation\workspace-java\SpringBootProject)
+2021-07-31 14:17:57,615 DEBUG [main] SpringBootApp: Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2021-07-31 14:17:57,616 INFO  [main] SpringBootApp: No active profile set, falling back to default profiles: default
+2021-07-31 14:17:58,099 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-31 14:17:58,122 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2021-07-31 14:17:58,561 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-31 14:17:58,811 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2021-07-31 14:17:58,982 WARN  [main] AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-07-31 14:17:58,996 DEBUG [main] debug: log4jdbc-logj2 properties initialization...
+2021-07-31 14:17:58,997 DEBUG [main] debug: Using logger: null
+2021-07-31 14:17:58,997 DEBUG [main] debug: x log4jdbc.debug.stack.prefix is not defined
+2021-07-31 14:17:58,998 DEBUG [main] debug: x log4jdbc.sqltiming.warn.threshold is not defined
+2021-07-31 14:17:58,998 DEBUG [main] debug: x log4jdbc.sqltiming.error.threshold is not defined
+2021-07-31 14:17:58,999 DEBUG [main] debug: x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+2021-07-31 14:17:58,999 DEBUG [main] debug: x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+2021-07-31 14:17:58,999 DEBUG [main] debug: x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+2021-07-31 14:17:59,000 DEBUG [main] debug: x log4jdbc.statement.warn is not defined (using default value false)
+2021-07-31 14:17:59,000 DEBUG [main] debug: x log4jdbc.dump.sql.select is not defined (using default value true)
+2021-07-31 14:17:59,000 DEBUG [main] debug: x log4jdbc.dump.sql.insert is not defined (using default value true)
+2021-07-31 14:17:59,000 DEBUG [main] debug: x log4jdbc.dump.sql.update is not defined (using default value true)
+2021-07-31 14:17:59,000 DEBUG [main] debug: x log4jdbc.dump.sql.delete is not defined (using default value true)
+2021-07-31 14:17:59,001 DEBUG [main] debug: x log4jdbc.dump.sql.create is not defined (using default value true)
+2021-07-31 14:17:59,001 DEBUG [main] debug: x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+2021-07-31 14:17:59,001 DEBUG [main] debug: x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+2021-07-31 14:17:59,002 DEBUG [main] debug: x log4jdbc.drivers is not defined
+2021-07-31 14:17:59,002 DEBUG [main] debug: x log4jdbc.trim.sql is not defined (using default value true)
+2021-07-31 14:17:59,002 DEBUG [main] debug: x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+2021-07-31 14:17:59,002 DEBUG [main] debug: x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+2021-07-31 14:17:59,002 DEBUG [main] debug: log4jdbc-logj2 properties initialization done.
+2021-07-31 14:17:59,002 DEBUG [main] debug: DriverSpy intialization...
+2021-07-31 14:17:59,008 DEBUG [main] debug:   FOUND DRIVER com.mysql.jdbc.Driver
+2021-07-31 14:17:59,011 DEBUG [main] debug: DriverSpy intialization done.
+2021-07-31 14:17:59,023 INFO  [main] ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-31 14:17:59,032 ERROR [main] LoggingFailureAnalysisReporter: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-07-31 14:19:03,903 INFO  [RMI TCP Connection(28)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin: Application shutdown requested.
+2021-07-31 14:19:03,906 INFO  [RMI TCP Connection(28)-127.0.0.1] ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-31 14:19:03,907 INFO  [RMI TCP Connection(28)-127.0.0.1] LocalContainerEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-31 14:19:36,487 INFO  [main] SpringBootApp: Starting SpringBootApp on shabir-pc with PID 23712 (D:\workstation\workspace-java\SpringBootProject\target\classes started by admin in D:\workstation\workspace-java\SpringBootProject)
+2021-07-31 14:19:36,490 DEBUG [main] SpringBootApp: Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2021-07-31 14:19:36,490 INFO  [main] SpringBootApp: No active profile set, falling back to default profiles: default
+2021-07-31 14:19:37,028 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-31 14:19:37,044 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2021-07-31 14:19:37,513 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-31 14:19:37,832 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2021-07-31 14:19:37,994 WARN  [main] AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-07-31 14:19:38,007 DEBUG [main] debug: log4jdbc-logj2 properties initialization...
+2021-07-31 14:19:38,009 DEBUG [main] debug: Using logger: null
+2021-07-31 14:19:38,009 DEBUG [main] debug: x log4jdbc.debug.stack.prefix is not defined
+2021-07-31 14:19:38,009 DEBUG [main] debug: x log4jdbc.sqltiming.warn.threshold is not defined
+2021-07-31 14:19:38,010 DEBUG [main] debug: x log4jdbc.sqltiming.error.threshold is not defined
+2021-07-31 14:19:38,010 DEBUG [main] debug: x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+2021-07-31 14:19:38,010 DEBUG [main] debug: x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+2021-07-31 14:19:38,011 DEBUG [main] debug: x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+2021-07-31 14:19:38,011 DEBUG [main] debug: x log4jdbc.statement.warn is not defined (using default value false)
+2021-07-31 14:19:38,011 DEBUG [main] debug: x log4jdbc.dump.sql.select is not defined (using default value true)
+2021-07-31 14:19:38,011 DEBUG [main] debug: x log4jdbc.dump.sql.insert is not defined (using default value true)
+2021-07-31 14:19:38,011 DEBUG [main] debug: x log4jdbc.dump.sql.update is not defined (using default value true)
+2021-07-31 14:19:38,012 DEBUG [main] debug: x log4jdbc.dump.sql.delete is not defined (using default value true)
+2021-07-31 14:19:38,012 DEBUG [main] debug: x log4jdbc.dump.sql.create is not defined (using default value true)
+2021-07-31 14:19:38,012 DEBUG [main] debug: x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+2021-07-31 14:19:38,012 DEBUG [main] debug: x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+2021-07-31 14:19:38,012 DEBUG [main] debug: x log4jdbc.drivers is not defined
+2021-07-31 14:19:38,013 DEBUG [main] debug: x log4jdbc.trim.sql is not defined (using default value true)
+2021-07-31 14:19:38,013 DEBUG [main] debug: x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+2021-07-31 14:19:38,013 DEBUG [main] debug: x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+2021-07-31 14:19:38,013 DEBUG [main] debug: log4jdbc-logj2 properties initialization done.
+2021-07-31 14:19:38,013 DEBUG [main] debug: DriverSpy intialization...
+2021-07-31 14:19:38,019 DEBUG [main] debug:   FOUND DRIVER com.mysql.jdbc.Driver
+2021-07-31 14:19:38,022 DEBUG [main] debug: DriverSpy intialization done.
+2021-07-31 14:19:38,035 INFO  [main] ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-31 14:19:38,044 ERROR [main] LoggingFailureAnalysisReporter: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-07-31 14:20:50,320 INFO  [main] SpringBootApp: Starting SpringBootApp on shabir-pc with PID 21436 (D:\workstation\workspace-java\SpringBootProject\target\classes started by admin in D:\workstation\workspace-java\SpringBootProject)
+2021-07-31 14:20:50,382 DEBUG [main] SpringBootApp: Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2021-07-31 14:20:50,383 INFO  [main] SpringBootApp: No active profile set, falling back to default profiles: default
+2021-07-31 14:20:50,907 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-31 14:20:50,988 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 70ms. Found 2 repository interfaces.
+2021-07-31 14:20:51,449 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-31 14:20:51,871 INFO  [main] TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2021-07-31 14:20:52,077 DEBUG [main] debug: log4jdbc-logj2 properties initialization...
+2021-07-31 14:20:52,078 DEBUG [main] debug: Using logger: null
+2021-07-31 14:20:52,078 DEBUG [main] debug: x log4jdbc.debug.stack.prefix is not defined
+2021-07-31 14:20:52,078 DEBUG [main] debug: x log4jdbc.sqltiming.warn.threshold is not defined
+2021-07-31 14:20:52,078 DEBUG [main] debug: x log4jdbc.sqltiming.error.threshold is not defined
+2021-07-31 14:20:52,079 DEBUG [main] debug: x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+2021-07-31 14:20:52,079 DEBUG [main] debug: x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+2021-07-31 14:20:52,079 DEBUG [main] debug: x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+2021-07-31 14:20:52,079 DEBUG [main] debug: x log4jdbc.statement.warn is not defined (using default value false)
+2021-07-31 14:20:52,080 DEBUG [main] debug: x log4jdbc.dump.sql.select is not defined (using default value true)
+2021-07-31 14:20:52,080 DEBUG [main] debug: x log4jdbc.dump.sql.insert is not defined (using default value true)
+2021-07-31 14:20:52,080 DEBUG [main] debug: x log4jdbc.dump.sql.update is not defined (using default value true)
+2021-07-31 14:20:52,080 DEBUG [main] debug: x log4jdbc.dump.sql.delete is not defined (using default value true)
+2021-07-31 14:20:52,080 DEBUG [main] debug: x log4jdbc.dump.sql.create is not defined (using default value true)
+2021-07-31 14:20:52,080 DEBUG [main] debug: x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+2021-07-31 14:20:52,081 DEBUG [main] debug: x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+2021-07-31 14:20:52,081 DEBUG [main] debug: x log4jdbc.drivers is not defined
+2021-07-31 14:20:52,081 DEBUG [main] debug: x log4jdbc.trim.sql is not defined (using default value true)
+2021-07-31 14:20:52,081 DEBUG [main] debug: x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+2021-07-31 14:20:52,081 DEBUG [main] debug: x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+2021-07-31 14:20:52,081 DEBUG [main] debug: log4jdbc-logj2 properties initialization done.
+2021-07-31 14:20:52,081 DEBUG [main] debug: DriverSpy intialization...
+2021-07-31 14:20:52,082 DEBUG [main] debug:   FOUND DRIVER com.mysql.jdbc.Driver
+2021-07-31 14:20:52,086 DEBUG [main] debug: DriverSpy intialization done.
+2021-07-31 14:20:52,606 WARN  [main] DriverDataSource: Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-07-31 14:20:54,118 INFO  [main] LocalContainerEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-31 14:20:54,759 WARN  [main] JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-31 14:20:55,013 INFO  [main] ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-31 14:20:55,283 INFO  [main] TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-31 14:20:55,286 INFO  [main] SpringBootApp: Started SpringBootApp in 5.641 seconds (JVM running for 6.664)
+2021-07-31 14:21:02,228 INFO  [http-nio-8080-exec-2] PerformanceAspect: com.home.sabir.java.springboot.service.impl.CompanyServiceImpl : convertToDto started at 20210731_142102
+2021-07-31 14:21:02,229 INFO  [http-nio-8080-exec-2] PerformanceAspect: com.home.sabir.java.springboot.service.impl.CompanyServiceImpl : convertToDto took 47 ms and ended at 20210731_142102
+2021-07-31 14:21:02,233 INFO  [http-nio-8080-exec-2] PerformanceAspect: com.home.sabir.java.springboot.controller.SpringJdbcController : viewCompany started at 20210731_142102
+2021-07-31 14:21:02,234 INFO  [http-nio-8080-exec-2] PerformanceAspect: com.home.sabir.java.springboot.controller.SpringJdbcController : viewCompany took 77 ms and ended at 20210731_142102
