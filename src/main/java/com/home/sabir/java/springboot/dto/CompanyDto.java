@@ -1,9 +1,16 @@
 package com.home.sabir.java.springboot.dto;
 
+import javax.persistence.Column;
+
 public class CompanyDto {
 	
-	private String name;
+	
     private long id;
+    private String name;
+    private String uen;    
+    private String email;
+    
+    
     public long getId() {
         return id;
     }
@@ -16,8 +23,23 @@ public class CompanyDto {
     public void setName(String name) {
         this.name = name;
     }
+	public String getUen() {
+		return uen;
+	}
+	public void setUen(String uen) {
+		this.uen = uen;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-    public String toString(){
-        return id+" | " + name;
-    }
+
+	@Override
+	public String toString() {
+		return "CompanyDto [id=" + id + ", name=" + name + ", uen=" + uen + ", email="
+				+ email + "]";
+	}
 }

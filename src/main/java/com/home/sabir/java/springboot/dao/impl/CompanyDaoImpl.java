@@ -41,7 +41,8 @@ public class CompanyDaoImpl implements CompanyDao {
 	}
 
 	public int saveCompany(Company c){
-		String query="insert into admin_sys_company values('"+c.getId()+"','"+c.getName()+"')";
+		String query="insert into admin_sys_company (name,email,uen,createdby,updatedBy,updatedTs) " +
+				" values('"+c.getName()+"','"+c.getEmail()+"','"+c.getUen()+"','1','1',sysdate())";
 		logger.debug("CompanyDaoImpl.saveCompany query="+query);
 		return jdbcTemplate.update(query);
 	}
@@ -99,8 +100,10 @@ public class CompanyDaoImpl implements CompanyDao {
 		        List<Company> list=new ArrayList<Company>();  
 		        while(rs.next()){  
 		        	Company e=new Company();  
-			        e.setId(rs.getInt(1));  
-			        e.setName(rs.getString(2));  
+			        e.setId(rs.getInt("id"));  
+			        e.setName(rs.getString("name"));   
+			        e.setEmail(rs.getString("email"));    
+			        e.setUen(rs.getString("uen"));   
 			        list.add(e);  
 		        }  
 		        return list;  
@@ -113,8 +116,10 @@ public class CompanyDaoImpl implements CompanyDao {
 		    @Override  
 		    public Company mapRow(ResultSet rs, int rownumber) throws SQLException {  
 		    	Company e=new Company();  
-		        e.setId(rs.getInt(1));  
-		        e.setName(rs.getString(2));  
+		        e.setId(rs.getInt("id"));  
+		        e.setName(rs.getString("name"));   
+		        e.setEmail(rs.getString("email"));    
+		        e.setUen(rs.getString("uen")); 
 		        return e;  
 		    }  
 		    });  

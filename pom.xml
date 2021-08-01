@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.java.spring</groupId>
-    <artifactId>SpringBootProject</artifactId>
+    <artifactId>SpringServicesProject</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>SpringBootProject</name>
-	<description>Spring Boot Project</description>
+    <name>Spring-Services</name>
+	<description>Spring Services Project</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -28,6 +28,7 @@
     	 <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
+            <!-- 
 			<exclusions>			
 				<exclusion>
                     <groupId>org.springframework.boot</groupId>
@@ -41,14 +42,14 @@
                     <groupId>ch.qos.logback</groupId>
                    <artifactId>logback-classic</artifactId>
                 </exclusion>
-			</exclusions>
+			</exclusions> -->
         </dependency>
         
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             
-			<exclusions>			
+			<!-- <exclusions>			
 				<exclusion>
                     <groupId>org.springframework.boot</groupId>
                    <artifactId>spring-boot-starter-logging</artifactId>
@@ -61,7 +62,7 @@
                     <groupId>ch.qos.logback</groupId>
                    <artifactId>logback-classic</artifactId>
                 </exclusion>
-			</exclusions>
+			</exclusions> -->
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -116,7 +117,7 @@
 				<configuration>
 					<packagingExcludes>WEB-INF/lib/tomcat-*.jar</packagingExcludes>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
-					<warName>SpringBootProject</warName>
+					<warName>Spring-Services</warName>
 				</configuration>
 			</plugin>
         </plugins>

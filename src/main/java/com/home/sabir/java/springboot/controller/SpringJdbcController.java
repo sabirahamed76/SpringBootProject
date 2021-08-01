@@ -64,6 +64,8 @@ public class SpringJdbcController {
 					cDto=new CompanyDto();
 					cDto.setId(company.getId());
 					cDto.setName(company.getName());
+					cDto.setEmail(company.getEmail());
+					cDto.setUen(company.getUen());
 				//}				
 			}
 			return new ResponseEntity<>(cDto, HttpStatus.OK);
